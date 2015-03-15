@@ -35,7 +35,7 @@ namespace :deploy do
     # Do nothing.
   end
 
-  desc "Restart Application"
+  desc "Restart my Application"
   task :restart, :roles => :app do
     run "touch #{current_release}/tmp/restart.txt"
   end
